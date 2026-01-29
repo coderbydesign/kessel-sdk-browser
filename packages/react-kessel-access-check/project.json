@@ -1,5 +1,5 @@
 {
-  "name": "@project-kessel/react-kessel-access-check",
+  "name": "react-kessel-access-check",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/react-kessel-access-check/src",
   "projectType": "library",
