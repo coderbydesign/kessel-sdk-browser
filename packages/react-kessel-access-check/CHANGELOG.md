@@ -1,3 +1,13 @@
+## 0.3.0 (2026-02-10)
+
+### 🚀 Features
+
+- triggering package release for the bulk self access check ([#37](https://github.com/project-kessel/kessel-sdk-browser/pull/37))
+
+### ❤️ Thank You
+
+- Tahmid Efaz
+
 ## 0.2.6 (2026-02-03)
 
 ### 🩹 Fixes
