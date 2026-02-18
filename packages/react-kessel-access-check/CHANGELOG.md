@@ -1,3 +1,9 @@
+## 0.3.2 (2026-02-18)
+
+### 🩹 Fixes
+
+- refactoring to remove duplicate and unused types ([#34](https://github.com/project-kessel/kessel-sdk-browser/pull/34))
+
 ## 0.3.1 (2026-02-10)
 
 ### 🩹 Fixes
