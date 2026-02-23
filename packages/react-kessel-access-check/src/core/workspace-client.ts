@@ -1,5 +1,4 @@
-import type { Workspace } from '../types';
-import type { ApiErrorResponse } from './api-client';
+import type { Workspace, SelfAccessCheckError } from '../types';
 
 const WORKSPACE_API_PATH = '/api/rbac/v2/workspaces/';
 
@@ -75,7 +74,7 @@ export async function fetchWorkspaceByType(
   });
 
   if (!response.ok) {
-    let errorData: ApiErrorResponse;
+    let errorData: SelfAccessCheckError;
     try {
       errorData = await response.json();
     } catch {
@@ -95,7 +94,7 @@ export async function fetchWorkspaceByType(
       code: 404,
       message: `No ${workspaceType} workspace found in response`,
       details: [],
-    } satisfies ApiErrorResponse;
+    } satisfies SelfAccessCheckError;
   }
 
   return data.data[0];
