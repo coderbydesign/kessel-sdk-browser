@@ -97,7 +97,7 @@ export default function WorkspaceRetrieval() {
           </div>
         )}
         {root.data && <WorkspaceCard label="Root Workspace" workspace={root.data} />}
-        {root.error && <WorkspaceError label="Root Workspace" error={root.error} />}
+        {root.error !== null && <WorkspaceError label="Root Workspace" error={root.error} />}
 
         {def.loading && (
           <div className="loading-container">
@@ -106,7 +106,7 @@ export default function WorkspaceRetrieval() {
           </div>
         )}
         {def.data && <WorkspaceCard label="Default Workspace" workspace={def.data} />}
-        {def.error && <WorkspaceError label="Default Workspace" error={def.error} />}
+        {def.error !== null && <WorkspaceError label="Default Workspace" error={def.error} />}
       </div>
 
       <CodeBlock code={code} />
